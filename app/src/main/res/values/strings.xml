@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">RutwikAssignment2</string>
+    <string name="app_name">Appointment Manager</string>
+    <string name="add_appointment">Add Appointment</string>
+    <string name="schedule">Schedule</string>
+    <string name="appointment_name">Appointment Name</string>
+    <string name="select_date_hint">Select Date</string>
+    <string name="select_time_hint">Select Time</string>
+    <string name="pick_date">Pick Date</string>
+    <string name="pick_time">Pick Time</string>
+    <string name="appointment_id_label">ID:</string>
+    <string name="appointment_name_label">Name:</string>
+    <string name="appointment_date_time_label">Due Date &amp; Time:</string>
 </resources>

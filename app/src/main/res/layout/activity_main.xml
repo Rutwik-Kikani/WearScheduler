@@ -1,10 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".activity.MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_boxedEdges="all">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/appointments_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingBottom="16dp"
+            android:layout_weight="1"
+            tools:listitem="@layout/item_appointment_layout"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_appointment_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_corners"
+            android:padding="5dp"
+            android:text="@string/add_appointment"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</androidx.wear.widget.BoxInsetLayout>
