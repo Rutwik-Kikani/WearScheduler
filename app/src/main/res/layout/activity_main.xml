@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="8dp"
         app:layout_boxedEdges="all">
 
         <androidx.recyclerview.widget.RecyclerView
